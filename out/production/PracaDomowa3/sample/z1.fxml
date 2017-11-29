@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.z1">
+   <children>
+      <VBox layoutX="50.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <TextField promptText="Login" />
+            <TextField promptText="Hasło" />
+            <Button mnemonicParsing="false" text="Zaloguj" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
