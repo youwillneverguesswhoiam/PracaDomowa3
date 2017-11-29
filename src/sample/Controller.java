@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.TabPane;
@@ -10,8 +11,8 @@ import java.io.IOException;
 
 public class Controller {
     public Pane plansza;
-
-    public void z1(ActionEvent actionEvent) {
+    public Pane plansza1;
+    public void zz1(Event actionEvent) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("z1.fxml"));
         try {
             Parent pane = loader.load();
@@ -23,20 +24,20 @@ public class Controller {
             e.printStackTrace();
         }
     }
-    public void z2(ActionEvent actionEvent) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("z1.fxml"));
+    public void zz2(Event  actionEvent) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("z2.fxml"));
         try {
             Parent pane = loader.load();
             z2 cntr = loader.getController();
             cntr.setParentController(this);
-            plansza.getChildren().clear();
-            plansza.getChildren().add(pane);
+            plansza1.getChildren().clear();
+            plansza1.getChildren().add(pane);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public void z3(ActionEvent actionEvent) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("z1.fxml"));
+    public void zz3(Event  actionEvent) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("z3.fxml"));
         try {
             Parent pane = loader.load();
             z3 cntr = loader.getController();
