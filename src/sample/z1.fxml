@@ -4,16 +4,21 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.z1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.z1">
    <children>
       <VBox layoutX="50.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <TextField promptText="Login" />
-            <TextField promptText="Hasło" />
-            <Button mnemonicParsing="false" text="Zaloguj" />
+            <TextField fx:id="login" promptText="Login" />
+            <TextField fx:id="hasło" promptText="Hasło" />
+            <Button mnemonicParsing="false" onAction="#zaloguj" text="Zaloguj" />
          </children>
       </VBox>
+      <VBox layoutX="238.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rola" />
+         </children></VBox>
    </children>
 </AnchorPane>

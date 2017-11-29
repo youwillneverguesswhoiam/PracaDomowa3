@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.z2">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.z2">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
          <children>
-            <TableView layoutX="14.0" layoutY="37.0" prefHeight="200.0" prefWidth="447.0">
+            <TableView fx:id="tabelka" layoutY="37.0" prefHeight="200.0" prefWidth="447.0">
                <columns>
                   <TableColumn prefWidth="75.0" text="Imię" />
                   <TableColumn prefWidth="75.0" text="Nazwisko" />
@@ -22,7 +21,7 @@
                   <TableColumn prefWidth="75.0" text="Usuń" />
                </columns>
             </TableView>
-            <VBox layoutX="482.0" layoutY="37.0" prefHeight="200.0" prefWidth="107.0">
+            <VBox layoutX="464.0" layoutY="37.0" prefHeight="200.0" prefWidth="114.0">
                <children>
                   <TextField promptText="imię" />
                   <TextField promptText="nazwisko" />
