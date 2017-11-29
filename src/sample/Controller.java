@@ -30,8 +30,8 @@ public class Controller {
             Parent pane = loader.load();
             z2 cntr = loader.getController();
             cntr.setParentController(this);
-            plansza1.getChildren().clear();
-            plansza1.getChildren().add(pane);
+            plansza.getChildren().clear();
+            plansza.getChildren().add(pane);
         } catch (IOException e) {
             e.printStackTrace();
         }
