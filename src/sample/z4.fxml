@@ -12,7 +12,7 @@
          <children>
             <TextField fx:id="login" promptText="Login" />
             <TextField fx:id="hasło" promptText="Hasło" />
-            <Button mnemonicParsing="false" onAction="#zaloguj" text="Zaloguj" />
+            <Button mnemonicParsing="false" onAction="#zaloguj" text="Wyloguj" />
          </children>
       </VBox>
       <VBox layoutX="238.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0">

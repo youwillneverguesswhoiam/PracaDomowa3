@@ -48,4 +48,16 @@ public class Controller {
             e.printStackTrace();
         }
     }
+    public void zz4(Event  actionEvent) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("z4.fxml"));
+        try {
+            Parent pane = loader.load();
+            z4 cntr = loader.getController();
+            cntr.setParentController(this);
+            plansza.getChildren().clear();
+            plansza.getChildren().add(pane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
