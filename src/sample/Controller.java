@@ -6,10 +6,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 
 public class Controller {
+    private static Text rola;
     public Pane plansza;
     public Pane plansza1;
     public void zz1(Event actionEvent) {
@@ -60,4 +62,7 @@ public class Controller {
             e.printStackTrace();
         }
     }
+    public static Text getRola() {return rola;}
+    public static void setRola(Text roll) {rola = roll;}
+
 }

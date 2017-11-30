@@ -67,8 +67,4 @@ public class Człowiek {
     public void setPesel(int p) {
         pesel.set(p);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 55508856e64f045121677c58d4f3a705ff42c460

@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.TextArea?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.z1">
    <children>
       <VBox layoutX="50.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0">
@@ -17,8 +18,10 @@
       </VBox>
       <VBox layoutX="238.0" layoutY="47.0" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rola" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" visible="false"  fx:id="log" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rola"  visible="false" fx:id="rola"/>
+            <TextArea fx:id="rola1" prefHeight="34.0" prefWidth="100.0" text="tu bedzie rola (albo i nie)" />
+            <TextArea fx:id="rola2" layoutX="10.0" layoutY="44.0" prefHeight="34.0" prefWidth="100.0" text="tu bedzie login (albo i nie)" />
          </children></VBox>
    </children>
 </AnchorPane>
