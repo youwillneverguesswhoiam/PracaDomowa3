@@ -17,7 +17,11 @@ public class z2 {
 
     public String [] lista = {"Imię", "Nazwisko","Wiek", "Wzrost", "Pesel"};
 
+<<<<<<< HEAD
     @FXML public void stworz(ActionEvent actionEvent) {
+=======
+    @FXML public void handleClick(ActionEvent actionEvent) {
+>>>>>>> 55508856e64f045121677c58d4f3a705ff42c460
         tabelka.getItems().add(new Człowiek(tI.getText(), tN.getText(), Integer.parseInt(tWi.getText()), Integer.parseInt(tWz.getText()), Integer.parseInt(tP.getText())));
     }
 

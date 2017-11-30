@@ -13,7 +13,11 @@ public class z1 {
     private Controller parentController;
     public void zmienz1(ActionEvent actionEvent) {
 
+<<<<<<< HEAD
         parentController.zz4(actionEvent);
+=======
+        parentController.zz3(actionEvent);
+>>>>>>> 55508856e64f045121677c58d4f3a705ff42c460
     }
     public void setParentController(Controller parentController) {
 
@@ -26,6 +30,7 @@ public class z1 {
     public void zaloguj(ActionEvent actionEvent) {
 
         final String l = "login";
+<<<<<<< HEAD
 
         final String h = "haslo";
         System.out.println("działa");
@@ -39,3 +44,15 @@ public class z1 {
 
     }
 }
+=======
+        System.out.println(login.getText() + "abc");
+        final String h = "hasło";
+        System.out.println("działa");
+
+        if(l == login.getText() && h == hasło.getText()) {
+            System.out.println("działa");
+        }
+
+    }
+}
+>>>>>>> 55508856e64f045121677c58d4f3a705ff42c460
